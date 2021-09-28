@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milliy taomlar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="cafe">
+        <div class="container">
+            <header class="cafe__header">
+
+                <div class="row">
+
+                    <div class="cafe__text">
+                        <h1 class="cafe__name">Milliy taomlar</h1>
+                        <span class="data">Tuesday, 2 Feb 2021</span>
+                    </div>
+
+                    <div class="cafe__search">
+                        <span class="icon-search"></span>
+                        <input type="text" placeholder="Search for food, coffe, etc.." class="search__inp">
+                    </div>
+
+                </div>
+
+                <nav class="header__nav" id="myNavbar">
+                    <a href="#" class="header__link active__link" data-type="-1">All</a>
+                    <a href="#" class="header__link" data-type="0">Hot Dishes</a>
+                    <a href="#" class="header__link" data-type="1">Cold Dishes</a>
+                    <a href="#" class="header__link" data-type="2">Soup</a>
+                    <a href="#" class="header__link" data-type="3">Grill</a>
+                    <a href="#" class="header__link" data-type="4">Salads</a>
+                    <a href="#" class="header__link" data-type="5">Desserts</a>
+                </nav>
+
+            </header>
+
+
+            <section class="menu">
+
+                <div class="row">
+                    <h2 class="menu__title">Choose Dishes</h2>
+                    <select id="" class="menu__select">
+                        <option value=""><span class="icon-bottom"></span>Dine In</option>
+                    </select>
+                </div>
+
+                <div class="row" id="table"></div>
+
+            </section>
+        </div>
+
+        <button id="openCheckout">0</button>
+    </div>
+
+
+    <!-- checkout -->
+
+    <div class="bg-checkout">
+        
+    <div class="checkout">
+        <img src="./img/left.svg" alt="" class="back">
+        <div class="confirmation">
+            <h2 class="checkout__title">Confirmation</h2>
+        
+            <div class="confirmation__dishes"></div>
+
+            <div class="row">
+                <span class="total__text">Sub total</span>
+                <span class="price__sum">0</span>
+            </div>
+        </div>
+        <div class="payment">
+            <h2 class="checkout__title">Payment</h2>
+            <span class="dish__item">3 payment method available</span>
+            
+            <div class="pay">
+                <h3 class="pay__title">Payment Method</h3>
+
+                <div class="pay__method active__method">
+                    <img src="./img/right.svg" alt="" class="active__badge">
+                    <img src="./img/card.svg" alt="">
+                    <span class="method__text mt-6">Credit Card</span>
+                </div>
+
+                <div class="pay__method">
+                    <img src="./img/Paypal.svg" alt="">
+                    <span class="method__text">Paypal</span>
+                </div>
+
+                <div class="pay__method">
+                    <img src="./img/Wallet.svg" alt="">
+                    <span class="method__text mt-4">Cash</span>
+                </div>
+
+                <form action="#">
+                    <label for="name">Cardholder Name</label>
+                    <input type="text" class="inp inp_top" id="name">
+    
+                    <label for="cardNum">Card Number</label>
+                    <input type="tel" class="inp inp_top" id="cardNum">
+    
+                    
+                    <div class="row">
+                        <div class="inps_bottom">
+                            <label for="date">Expiration Date</label>
+                            <input type="text" class="inp inp_bottom" id="date">
+                        </div>
+        
+                        <div class="inps_bottom">
+                            <label for="cvv">CVV</label>
+                            <input type="password" class="inp inp_bottom" id="cvv">
+                        </div>
+                    </div>
+                    
+                </form>
+
+            </div>
+
+            <form action="#">
+                <div class="row">
+                    <div>
+                        <label for="dine">Order Type</label>
+                        <select id="dine" class="menu__select">
+                            <option value="1"><span class="icon-bottom"></span>Dine In</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="table">Table no.</label>
+                        <input type="text" id="table" class="inp">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button type="reset" class=" btn btn__reset">Cancel</button>
+                    <button type="submit" class=" btn btn__submit">Confirm Payment</button>
+                </div>
+            </form>
+
+            
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
